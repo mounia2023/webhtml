@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>Addition en JavaScript </h2>
+
+    <label for="inputX">Valeur de x :</label>
+    <input type="number" id="inputX">
+
+    <label for="inputY">Valeur de y :</label>
+    <input type="number" id="inputY">
+
+    <label for="inputZ">Valeur de z :</label>
+    <input type="number" id="inputZ">
+
+    <button onclick="addition()">Additionner les trois nombres</button>
+
+    <p>Résultat : <span id="resultat"></span></p>
+
+    <script>
+        function addition() {
+            // Obtenir les valeurs des champs de saisie
+            let x = parseFloat(document.getElementById("inputX").value);
+            let y = parseFloat(document.getElementById("inputY").value);
+            let z = parseFloat(document.getElementById("inputZ").value);
+
+            // Vérifier si les valeurs sont des nombres
+            //if (isNaN(x) || isNaN(y) || isNaN(z)) {
+              //  alert("Veuillez entrer des nombres valides.");
+           // } else {
+                // Calculer et afficher le résultat
+                let resultat = x + y + z;
+                document.getElementById("resultat").textContent = resultat;
+           // }
+        }
+    </script>
+    </body>
+    </html>

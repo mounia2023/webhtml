@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calcul de la Moyenne des Notes</title>
+</head>
+<body>
+
+    <h2>Calcul de la Moyenne des Notes</h2>
+
+    <script>
+        // Fonction pour calculer la moyenne des notes
+        function calculerMoyenne() {
+            // Création d'un tableau de notes
+            var notes = {
+                mathematiques: parseFloat(document.getElementById("mathematiques").value),
+                anglais: parseFloat(document.getElementById("anglais").value),
+                physique: parseFloat(document.getElementById("physique").value)
+            };
+
+           
+                // Calculer la moyenne
+                var moyenne = (notes.mathematiques + notes.anglais + notes.physique) / 3;
+
+                // Afficher la moyenne 
+                 document.write(moyenne) ;
+                //alert("La moyenne est : " + moyenne.toFixed(2));
+           
+        }
+    </script>
+
+    <!-- Formulaire pour entrer les notes -->
+    <label for="mathematiques">Mathématiques :</label>
+    <input type="text" id="mathematiques">
+
+    <label for="anglais">Anglais :</label>
+    <input type="text" id="anglais">
+
+    <label for="physique">Physique :</label>
+    <input type="text" id="physique">
+
+    <button onclick="calculerMoyenne()">Calculer la Moyenne</button>
+
+</body>
+</html>

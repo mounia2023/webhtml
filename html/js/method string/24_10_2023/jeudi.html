@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+  
+  <title>Redirection vers les Jours de la Semaine</title>
+</head>
+<body>
+<h2>On est le jeudi:</h2>
+
+
+<script>
+  // Fonction pour rediriger vers la page du jour sélectionné
+  function redirigerVersPage(jour) {
+    window.location.href = " redirectjour.html";}
+     function enregister() {
+        
+        
+       let Array = document.getElementById("text_inputWord").value;
+       var listeDeMots = Array.split(",");
+       let i = 0;
+       while (isteDeMots[i] != undefined) {
+                    document.write(isteDeMots[i] + " ");
+                    i++;
+                }
+       
+    
+      }
+</script>
+
+<input type="text" id="text_inputWord" placeholder="Entrez les mots separés par ,">
+  <button onclick="enregister()">enregistrer</button>
+  <button onclick="redirigerVersPage('retour à la page home ')">retour</button>
+  <p id="text_output"></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création et Affichage de Tableau en HTML et JavaScript</title>
+</head>
+<body>
+
+    <h2>Création et Affichage de Tableau en HTML et JavaScript</h2>
+
+    <!-- Div pour afficher le tableau -->
+    <div id="tableauOutput"></div>
+
+    <script>
+        // Fonction pour créer et afficher le tableau
+        function createAndDisplayTable() {
+            // Création d'un tableau vide
+            var tableau = [];
+
+            // Ajout d'éléments au tableau
+            tableau.push("nom");
+            tableau.push("prenom");
+            tableau.push("ville");
+
+            // Création d'une chaîne HTML pour afficher le tableau
+            var htmlOutput = "<table border='1'><tr><th>Index</th><th>Élément</th></tr>";
+
+            for (var i = 0; i < tableau.length; i++) {
+                htmlOutput += "<tr><td>" + i + "</td><td>" + tableau[i] + "</td></tr>";
+            }
+
+            htmlOutput += "</table>";
+
+            // Affichage du tableau dans la div avec l'id "tableauOutput"
+            document.getElementById("tableauOutput").innerHTML = htmlOutput;
+        }
+
+        // Appeler la fonction lors du chargement de la page (facultatif)
+        window.onload = createAndDisplayTable;
+    </script>
+
+</body>
+</html>

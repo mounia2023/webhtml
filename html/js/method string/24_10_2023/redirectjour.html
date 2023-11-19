@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+  
+  <title> les Jours de la Semaine</title>
+</head>
+<body>
+<h2>veuillez cliquer sur le jour choisi:</h2>
+<!-- Boutons pour chaque jour de la semaine avec des liens vers des pages spécifiques -->
+<button onclick="redirigerVersPage('lundi')">Lundi</button>
+<button onclick="redirigerVersPage('mardi')">Mardi</button>
+<button onclick="redirigerVersPage('mercredi')">Mercredi</button>
+<button onclick="redirigerVersPage('jeudi')">Jeudi</button>
+<button onclick="redirigerVersPage('vendredi')">Vendredi</button>
+<button onclick="redirigerVersPage('samedi')">Samedi</button>
+<button onclick="redirigerVersPage('dimanche')">Dimanche</button>
+
+<script>
+  // Fonction pour rediriger vers la page du jour sélectionné
+  function redirigerVersPage(jour) {
+    window.location.href = jour + ".html";
+  }
+  
+  
+</script>
+
+</body>
+</html>

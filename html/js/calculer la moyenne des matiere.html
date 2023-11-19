@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de la Moyenne des Notes</title>
+</head>
+<body>
+
+    <h2>Calcul de la Moyenne des Notes</h2>
+
+    <script>
+        // Fonction pour calculer la moyenne des notes
+        function calculerMoyenne() {
+            // Création d'un tableau de notes
+            var notes = {
+                mathematiques: [12, 15, 18, 10],
+                anglais: [14, 16, 12, 17],
+                physique: [13, 11, 19, 14]
+            };
+
+            // Calculer la moyenne pour chaque matière
+            var moyenneMath = calculerMoyenneMatiere(notes.mathematiques);
+            var moyenneAnglais = calculerMoyenneMatiere(notes.anglais);
+            var moyennePhysique = calculerMoyenneMatiere(notes.physique);
+
+            // Calculer la moyenne générale
+            var moyenneGenerale = (moyenneMath + moyenneAnglais + moyennePhysique) / 3;
+
+            // Afficher les moyennes
+            alert("Moyenne en Mathématiques : " + moyenneMath.toFixed(2) +
+                  "\nMoyenne en Anglais : " + moyenneAnglais.toFixed(2) +
+                  "\nMoyenne en Physique : " + moyennePhysique.toFixed(2) +
+                  "\nMoyenne Générale : " + moyenneGenerale.toFixed(2));
+        }
+
+        // Fonction pour calculer la moyenne d'une matière
+        function calculerMoyenneMatiere(notes) {
+            var somme = 0;
+            for (var i = 0; i < notes.length; i++) {
+                somme += notes[i];
+            }
+            return somme / notes.length;
+        }
+    </script>
+
+    <button onclick="calculerMoyenne()">Calculer la Moyenne</button>
+
+</body>
+</html>

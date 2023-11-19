@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">MAD </label> 
+        <input type="number" id="mad"><br>
+        <button type="button" onclick="convertMad()" id="b1">MAD to USD</button>
+        <button type="button" onclick="convertUsd()" id="b2">USD to MAD</button><br>
+
+        <label for="">USD</label> 
+        <input type="number" id="usd">
+    </form>
+
+    <script>
+        convertMad = () => {
+            let x = parseFloat(document.getElementById("mad").value);
+            let convert = x/10.2;
+            document.getElementById("usd").value = convert;
+        }
+        convertUsd = () => {
+            let x = parseFloat(document.getElementById("usd").value);
+            let convert = x*10.2;
+            document.getElementById("mad").value = convert;
+        }
+        
+    </script>
+    
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+<button onclick="let x =parseInt(document.getElementById('nombre1').value);  let y=parseInt(document.getElementById( 'nombre2' ).value); let result=x**y;   document.write(result); ">double multiplication</button>

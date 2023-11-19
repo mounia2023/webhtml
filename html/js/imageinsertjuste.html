@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start and Stop Buttons</title>
+  
+</head>
+<body>
+
+  <!-- Boutons -->
+  <button id="startButton">Marcher</button>
+  <button id="stopButton">Arrêter</button>
+
+
+  <img id="myImage" src="fond-vert.jpg" >
+  <img id="myImage2" src="fond-rouge.jpg" >
+
+  <script>
+    // quand le bouton "Start" est cliqué
+    function startFunction() {
+      // Afficher l'image
+      document.getElementById("myImage").style.display = "block";
+    }
+
+    // quand  le bouton "Arrêter" est cliqué
+    function stopFunction() {
+      // Masquer l'image
+      document.getElementById("myImage").style.display = "none";
+      //afficher l'image
+      document.getElementById("myImage2").style.display = "block"
+      
+    }
+
+    // voici les fonctions de clic des boutons
+    document.getElementById("startButton").addEventListener("click", startFunction);
+    document.getElementById("stopButton").addEventListener("click", stopFunction);
+  </script>
+
+</body>
+</html>

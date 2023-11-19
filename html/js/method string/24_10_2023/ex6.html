@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <textarea id="champT" rows="4" cols="100"></textarea> <br> <br>
+        <input type="button" value="done" id="b" onclick="afficher()">
+
+        <script>
+            function afficher() {
+                let text = document.getElementById("champT").value;
+                let array = text.split(",");
+                let i = 0;
+                
+                while (array[i] != undefined) {
+                    document.write(array[i] + " ");
+                    i++;
+                }
+            }
+        </script>
+    </body>
+</html>

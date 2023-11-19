@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inverse Mot</title>
+</head>
+<body>
+
+  <input type="text" id="mot_inputWord" placeholder="Entrez un mot">
+  <button onclick="inverseWord()">Inverser</button>
+  <p id="mot_output"></p>
+
+  <script>
+    function inverseWord() {
+      // Obtenir le mot depuis l'input
+      var inputWord = document.getElementById("mot_inputWord").value;
+
+      // Inverser le mot
+      var reversedWord = "";
+      for (var i = inputWord.length - 1; i >= 0; i--) {
+        reversedWord += inputWord[i];
+      }
+
+      // Afficher le mot inversé
+      document.getElementById("mot_output").textContent = "Mot inversé : " + reversedWord;
+    }
+  </script>
+
+</body>
+</html>

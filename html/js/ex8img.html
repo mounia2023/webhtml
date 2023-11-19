@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Button</title>
+</head>
+<body>
+
+  <!-- Bouton Toggle -->
+  <button id="toggleButton">Toggle</button>
+
+  <!-- Images -->
+  <img id="greenImage" src="lien_de_l_image_verte" alt="Image Verte" style="display: none;">
+  <img id="redImage" src="lien_de_l_image_rouge" alt="Image Rouge" style="display: none;">
+
+  <script>
+    // Fonction appelée lors du clic sur le bouton Toggle
+    function toggleFunction() {
+      var greenImage = document.getElementById("greenImage");
+      var redImage = document.getElementById("redImage");
+
+      // Vérifier si l'image verte est visible
+      if (greenImage.style.display !== "none") {
+        // Si l'image verte est visible, la masquer et afficher l'image rouge
+        greenImage.style.display = "none";
+        redImage.style.display = "block";
+      } else {
+        // Sinon, masquer l'image rouge et afficher l'image verte
+        greenImage.style.display = "block";
+        redImage.style.display = "none";
+      }
+    }
+
+    // Associer la fonction au clic sur le bouton Toggle
+    document.getElementById("toggleButton").addEventListener("click", toggleFunction);
+  </script>
+
+</body>
+</html>

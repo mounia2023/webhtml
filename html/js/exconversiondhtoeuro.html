@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <form action="" method="">
+        <script>
+		    document.write("Dhs :");
+	    </script>
+        <input type="text" id="nbr">  </input>
+        <br> 
+        <script>
+	    	document.write("USD :");
+	    </script>
+        <script>
+            function convertir(x){
+                return x*10.2 ;
+            }
+        </script>
+        <input type="button" value="Convertir"  
+        onclick="var x=document.getElementById('nbr').value;
+                 document.write(convertir(x));"
+        >
+        </input>
+    </form>
+    </body>
+    </html>

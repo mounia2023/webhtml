@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+  
+  <title>Multiplication de Tableaux</title>
+</head>
+<body>
+    
+
+  <script>
+    
+    var tableau1 = [1, 0, 6, 8];
+    var tableau2 = [1, 3, 5, 7];
+
+    // Vérifier si les tableaux ont la même longueur
+    if (tableau1.length === tableau2.length) {
+      
+      var resultat = [];
+      for (var i = 0; i < tableau1.length; i++) {
+        resultat.push(tableau1[i] * tableau2[i]);
+      }
+
+      // Afficher le résultat
+    
+      console.log("Tableau 1 : ", tableau1);
+      console.log("Tableau 2 : ", tableau2);
+      console.log("Résultat de la multiplication : ", resultat);
+    } else {
+      console.error("error");
+    }
+  </script>
+
+</body>
+</html>

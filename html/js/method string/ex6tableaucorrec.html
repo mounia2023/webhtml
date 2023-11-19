@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=["Ahmed","Anas","Achraf"];
+        // ajouter safaa a la fin et afficher
+        array.push("Safaa");
+        document.write(array);
+        // ajouet sanna au debut et afficher
+        array.unshift("Sanaa");
+        document.write("</br>"+array);
+        // ajouter omar entre anas et achraf
+        array.splice(3,0,"Omar");
+        document.write("</br>"+array);
+        //supprimer anas
+        array.splice(2,1);
+        document.write("</br>"+array);
+        // ajouter saad apres ahmed en supprimant achraf
+        array.splice(2,0,"Saad");
+        array.splice(4,1);
+        document.write("</br>"+array);
+        // inverser le tableau
+        array = array.reverse
+        ();
+        document.write("</br>"+array);
+        // concatene avec[aya maha]
+        let array2=["Aya","Maha"];
+        array = array.concat(array2);
+        
+        document.write("</br>"+array);
+        // supprimer Sanaa Maha Omar   
+        delete array[6];
+        delete array[4];
+        delete array[1];
+        document.write("</br>"+array);
+        //tri
+        array.sort();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création et Affichage de Tableau en HTML et JavaScript</title>
+</head>
+<body>
+    <form>
+        <script>
+		    document.write("Entrez votre nom :");
+	    </script>
+        <input type="text" id="nom">  </input>
+        <br> 
+        <script>
+		    document.write("Entez votre prenom :");
+	    </script>
+        <input type="text" id="prenom">  </input>
+        <br> 
+        <script>
+		    document.write("Entrez votre age :");
+	    </script>
+        <input type="text" id="age">  </input>
+        <br>
+        <script>
+		    document.write("Entrez votre adresse :");
+	    </script>
+        <input type="text" id="adresse">  </input>
+        <br>  
+        
+    </form>
+
+    <br><br>
+    <input type="button" value="Affichage"  
+           onclick="let personne={nom:(document.getElementById('nom').value),
+                        prenom:(document.getElementById('prenom').value),
+                        age:(document.getElementById('age').value),
+                        adresse:(document.getElementById('adresse').value)} ;
+           alert('Bonjour monsieur / madame ' + personne.prenom + ' ' + personne.nom);    
+           document.write('Votre age est '+personne.age);
+           document.write(' et votre adresse est '+personne.adresse);"
+        >
+    </input>
+
+</body>
+</html>

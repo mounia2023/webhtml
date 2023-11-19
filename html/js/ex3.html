@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>Addition en JavaScript </h2>
+
+    <label for="inputX">Valeur de x :</label>
+    <input type="number" id="inputX">
+
+    <label for="inputY">Valeur de y :</label>
+    <input type="number" id="inputY">
+
+    
+
+    <button onclick="addition()">Additionner les nombres</button>
+    <button onclick="multiplication()">multipliyer les  nombres</button>
+    <button onclick="division()">diviser les nombres</button>
+
+    <p>Résultat : <span id="resultat"></span></p>
+
+    <script>
+        function addition() {
+            // Obtenir les valeurs des champs de saisie
+            let x = parseFloat(document.getElementById("inputX").value);
+            let y = parseFloat(document.getElementById("inputY").value);
+            
+           
+                // Calculer et afficher le résultat
+                let resultat = x + y ;
+                document.getElementById("resultat").textContent = resultat;
+           
+        }
+       
+    </script>
+    </body>
+    </html>

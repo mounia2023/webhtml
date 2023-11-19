@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="email" name="email" placeholder="entrer un email">
+            
+        <button onclick="reformerEmail()">submite</button><br><br>
+        <textarea id="result" placeholder="result.."></textarea>
+    </div>
+    <div>
+        <input type="text" id="texte" name="texte" placeholder="entrer un texte">
+            
+        <button onclick="textefilrer()">OK</button><br><br>
+        <textarea id="result2" placeholder="result.."></textarea>
+    </div>
+
+    <script>
+        var email = document.getElementById("email");
+        var result = document.getElementById("result");
+        var texte = document.getElementById("texte");
+        function reformerEmail() {
+            const str = email.value.split('@');
+            let strSplited = str[0].slice(0,1);
+            result.innerHTML = strSplited.concat('...','@',str[1]);
+        }
+        function textefilrer() {
+            const tx = texte.value.split('@');
+            let strSplited = tx[0].slice(0,10);
+            result2.innerHTML = strSplited.concat(".......");
+        }
+
+    </script>
+</body>
+</html>

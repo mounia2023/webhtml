@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  
+  <title>Multiplication de Tableaux</title>
+</head>
+<body>
+    <script>
+
+    // Créer le tableau
+    let tableau = ["ahmed", "anas", "achraf"];
+    
+    // Ajouter safaa à la fin
+    tableau.push("safaa");
+    
+    document.write("le prenom ajouté à la fin :\n " + tableau);
+    
+    // Ajouter sanaa au début
+    tableau.unshift("sanaa");
+    document.write("le prenom ajouté  au début: " + tableau);
+    
+    // Ajouter omar entre anas et achraf
+    tableau.splice(2, 0, "omar");
+    document.write("le prenom ajouté  entre anas et achraf : " + tableau);
+    
+    // Supprimer anasentre anas et achraf
+    tableau.splice(tableau.indexOf("anas"), 1);
+    document.write("le prenom suprimé entre anas et achraf: " + tableau);
+    
+    // Ajouter saad après ahmed et supprimer achraf en même temps
+    tableau.splice(tableau.indexOf("ahmed") + 1, 0, "saad");
+    tableau.splice(tableau.indexOf("achraf"), 1);
+    document.write("Ajouter saad après ahmed et supprimer achraf en même temps: " + tableau);
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>devinette de  Nombre</title>
+</head>
+<body>
+
+  <h1>cliquer sur le bouton et deviner le nombre </h1>
+
+  <button onclick="demarrerJeu()">Démarrer le jeu</button>
+
+  <script>
+    var nombrex;
+
+    function demarrerJeu() {
+      // Générer un nombre aléatoire entre 0 et 9
+      nombrex = Math.floor(Math.random() * 10);
+
+      // Demander à l'utilisateur de deviner le nombre
+      var supposition = prompt("Devine le nombre entre 0 et 9 :");
+
+      // Vérifier si la supposition est correcte
+      if (supposition != null) {
+        supposition = parseInt(supposition); // Convertir la supposition en nombre entier
+
+        if (supposition === nombrex) {
+          alert("Félicitations ! Tu as deviné le bon nombre.");
+        } else {
+          alert("Dommage:( !!! tu as perdu) : " + nombrex);
+        }
+      } 
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>affichage jour</title>
+</head>
+<body>
+   <h2>veuillez choisir un jour</h2> 
+    <select name="jour" id="jour">
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6 </option>
+        <option value="7"> 7 </option>
+      </select>
+     
+    <button type="button" onclick="afficher()
+     document.getElementById('jour').value=jour;
+
+    document.write(jour);"></td>le jour choisi est:</button>
+    
+
+    <script>
+        afficher(){
+            
+            let op = document.getElementById("jour").value;
+           
+            
+
+            switch(op){
+                case '1' : 
+                jour="lundi";
+                break;
+                case "2" : 
+                jour="mardi";
+
+                break;
+                case "3" : 
+                jour="mercredi";
+
+                break;
+                case "4" :
+                jour="jeudi";
+                break;
+                case "vendredi" :
+                    
+
+                        break;
+                        case "6" :
+                        jour="samedi";
+
+                        break;
+                        case "7" :
+                    
+                        jour="dimanche";
+                        break;
+                   
+                    default : alert ("error 404")
+            }
+
+
+            document.getElementById("op").value = resultat;
+
+        } 
+
+    </script>
+</body>
+</html>
